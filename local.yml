@@ -1,0 +1,5 @@
+- hosts: localhost
+  become: true
+  tasks:
+    - name: Update subset of packages.
+      shell: curl https://get.volta.sh | bash
